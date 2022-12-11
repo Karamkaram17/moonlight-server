@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Edit-Item</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header><h1>Menu Editor</h1></header>
+    <main>
+      <div>
+        <form autocomplete="off" id="myForm">
+          <div>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+          <div>
+            <label for="category">Category:</label>
+            <input type="text" id="category" name="category" required />
+          </div>
+          <div>
+            <label for="price">Price:</label>
+            <input type="text" id="price" name="price" />
+          </div>
+          <div>
+            <label for="description">Description:</label>
+            <textarea id="description" rows="6" name="description"></textarea>
+          </div>
+          <button id="submitbtn" type="submit">Edit</button>
+        </form>
+      </div>
+      <div id="displaydiv" style="text-align: center">
+        <div>
+          <a href="/api-editer"
+            ><button style="background-color: inherit; border-radius: 5px">
+              return to home page
+            </button></a
+          >
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div id="copy"></div>
+      <div id="credit">
+        Developped by
+        <a href="https://www.linkedin.com/in/karam-b-karam" target="_blank"
+          >Karam</a
+        >
+      </div>
+    </footer>
+    <script src="edit-item.js"></script>
+  </body>
+</html>

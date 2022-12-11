@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu Editor</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  </head>
+  <body>
+    <header><h1>Menu Editor</h1></header>
+    <main>
+      <div>
+        <form autocomplete="off" id="myForm">
+          <div>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+          <div>
+            <label for="category">Category:</label>
+            <input type="text" id="category" name="category" required />
+          </div>
+          <div>
+            <label for="price">Price:</label>
+            <input type="text" id="price" name="price" />
+          </div>
+          <div>
+            <label for="description">Description:</label>
+            <textarea id="description" rows="3" name="description"></textarea>
+          </div>
+          <button id="submitbtn" type="submit">Add New Item</button>
+        </form>
+      </div>
+      <section id="shortcuts"><button id="dispAll">All</button></section>
+      <div id="displaydiv"></div>
+    </main>
+    <footer>
+      <div id="copy"></div>
+      <div id="credit">
+        Developped by
+        <a href="https://www.linkedin.com/in/karam-b-karam" target="_blank"
+          >Karam</a
+        >
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
