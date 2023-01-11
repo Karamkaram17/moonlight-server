@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+  <title>User Editor</title>
+</head>
+
+<body>
+  <header>
+    <h1>User Editor</h1>
+  </header>
+
+  <main>
+    <form class="user-form" autocomplete="off">
+      <h2>Add user</h2>
+      <div class="form-control">
+        <input type="text" name="username" class="user-input" id="username-input" placeholder="username" required
+          maxlength="25" minlength="5" />
+        <input type="password" name="password" required class="user-input" id="password-input" placeholder="password"
+          maxlength="25" minlength="5" />
+        <select name="role" id="role-input">
+          <option value="user">user</option>
+          <option value="admin">admin</option>
+        </select>
+
+        <button type="submit" id="submit-btn">submit</button>
+      </div>
+      <div class="form-alert"></div>
+    </form>
+    <section class="users-container">
+      <p class="loading-text">Loading...</p>
+      <div class="users"></div>
+    </section>
+  </main>
+
+  <footer>
+    <div id="copy"></div>
+    <div id="credit">
+      Developped by
+      <a href="https://www.linkedin.com/in/karam-b-karam" target="_blank">Karam</a>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"
+    integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>

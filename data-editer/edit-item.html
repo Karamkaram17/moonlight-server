@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Edit-Item</title>
+  <link rel="stylesheet" href="edit-item.css" />
+</head>
+
+<body>
+  <header>
+    <h1>Menu Editor</h1>
+  </header>
+
+  <main class="container">
+    <form class="single-item-form" autocomplete="off">
+      <h2>Edit Task</h2>
+      <div class="form-control">
+        <label for="name">Name :</label>
+        <input type="text" name="name" class="item-edit" id="item-edit-name" required maxlength="25" />
+        <label for="category">Category :</label>
+        <input type="text" name="category" class="item-edit" id="item-edit-category" required maxlength="25" />
+        <label for="price">Price :</label>
+        <input type="text" name="price" class="item-edit" id="item-edit-price" maxlength="15" />
+        <label for="description">Description :</label>
+        <textarea rows="5" name="description" class="item-edit" id="item-edit-description"></textarea>
+        <div></div>
+        <button type="submit" class="item-edit-btn">edit</button>
+      </div>
+      <div class="form-alert"></div>
+    </form>
+    <a href="index.html" id="home-page-ref"><button>back to tasks</button></a>
+  </main>
+
+  <footer>
+    <div id="copy"></div>
+    <div id="credit">
+      Developped by
+      <a href="https://www.linkedin.com/in/karam-b-karam" target="_blank">Karam</a>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"
+    integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="edit-item.js"></script>
+</body>
+
+</html>

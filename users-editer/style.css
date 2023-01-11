@@ -1,0 +1,118 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(30, 30, 33);
+  min-width: 300px;
+}
+button {
+  cursor: pointer;
+}
+:root {
+  color: white;
+}
+/* header */
+header {
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+header h1 {
+  margin: 0;
+}
+
+/* body ==========*/
+main {
+  display: grid;
+  padding-top: 10px;
+  width: 95%;
+  max-width: 400px;
+  margin: auto;
+  margin-bottom: 40px;
+}
+/* form  */
+form {
+  text-align: center;
+  background-color: rgb(42, 42, 42);
+  padding: 10px;
+  border-radius: 5px;
+}
+.form-control {
+  display: grid;
+  text-align: left;
+  border-radius: 5px;
+}
+.user-input,
+select,
+#submit-btn {
+  margin: 5px;
+  padding: 3px 5px;
+  border-radius: 5px;
+  border: 0;
+  background-color: rgb(73, 73, 73);
+  color: white;
+  font-size: 1rem;
+}
+#submit-btn {
+  background-color: rgb(146, 146, 147);
+}
+/* display users */
+.loading-text {
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-align: center;
+}
+.single-user {
+  display: grid;
+  grid-template-columns: 1fr 60px;
+  border: 1px solid black;
+  background-color: rgb(42, 42, 42);
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+.single-user h5 {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: lighter;
+}
+.user-links {
+  margin: 0;
+  padding: 0;
+}
+.single-user a {
+  text-decoration: none;
+  color: black;
+}
+.single-user button {
+  background-color: inherit;
+  border: 0;
+  margin-left: 10px;
+}
+.empty-list {
+  color: red;
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-align: center;
+}
+/* footer ==========*/
+footer {
+  text-align: end;
+  background-color: black;
+  color: white;
+  font-size: 12px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 5px 10% 5px 0;
+  display: grid;
+  grid-template-columns: auto 1fr;
+}
+#copy {
+  text-align: left;
+  padding-left: 20px;
+}
+footer a {
+  color: rgb(222, 126, 126);
+  text-decoration: none;
+}

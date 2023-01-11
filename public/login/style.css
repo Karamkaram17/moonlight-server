@@ -1,0 +1,55 @@
+body {
+  margin: 0;
+  background-color: rgb(44, 42, 42);
+  color: rgb(103, 187, 214);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#container {
+  display: grid;
+  width: 200px;
+  margin: auto;
+  border: 2px solid black;
+  border-radius: 15px;
+  padding: 10px;
+  background-color: rgb(77, 67, 67);
+}
+p {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 2rem;
+}
+.input-div {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+.username-div {
+  margin-bottom: 20px;
+}
+label {
+  padding-bottom: 0;
+}
+input {
+  background-color: inherit;
+  border: 1px solid rgb(182, 172, 172);
+  border-radius: 5px;
+  height: 25px;
+  margin-top: 0;
+  color: white;
+}
+button {
+  margin-top: 10px;
+  height: 30px;
+  border-radius: 5px;
+  background-color: black;
+  color: white;
+  border: none;
+}
+.gotouser {
+  width: 100%;
+}
+.gotodata {
+  width: 100%;
+}
