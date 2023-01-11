@@ -15,6 +15,7 @@ const checkUserAuthentication = async (req, res) => {
       SESSIONS.set(sessionId, user);
       res
         .cookie("sessionId", sessionId, {
+          maxAge: 1000 * 60 * 3,
           secure: true,
           httpOnly: true,
           sameSite: "none",

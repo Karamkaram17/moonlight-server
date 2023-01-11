@@ -60,12 +60,5 @@ let copy = document.getElementById("copy");
 copy.innerHTML = `&copy; ${date}`;
 
 function logOut() {
-  document.cookie =
-    "sessionId" + "=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
   window.location.reload();
 }
-
-window.addEventListener("beforeunload", function () {
-  document.cookie =
-    "sessionId" + "=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
-});
