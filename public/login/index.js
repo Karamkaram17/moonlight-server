@@ -2,7 +2,7 @@ const formDOM = document.getElementById("form");
 const usernameInputDOM = document.getElementById("username");
 const passwordInputDOM = document.getElementById("password");
 const formAlertDOM = document.getElementById("alert");
-const containerDom = document.getElementById("container");
+const containerDom = document.getElementById("main-container");
 
 formDOM.addEventListener("submit", async (e) => {
   e.preventDefault();
@@ -19,6 +19,9 @@ formDOM.addEventListener("submit", async (e) => {
       <a href="https://moonlight-znjk.onrender.com/data-editer">
         <button class="gotodata">Edit Data</button>
       </a>
+    </div>
+    <div>
+      <button onclick="logOut()" class="logout">Log Out</button>
     </div>`;
   try {
     await axios.post("/checklogin", { username: username, password: password });
@@ -29,4 +32,15 @@ formDOM.addEventListener("submit", async (e) => {
     usernameInputDOM.value = "";
     passwordInputDOM.value = "";
   }
+});
+
+function logOut() {
+  document.cookie =
+    "sessionId" + "=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+  window.location.reload();
+}
+
+window.addEventListener("beforeunload", function () {
+  document.cookie =
+    "sessionId" + "=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
 });

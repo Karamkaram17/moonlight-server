@@ -65,7 +65,6 @@ formDOM.addEventListener("submit", async (e) => {
   const username = usernameInputDOM.value;
   const password = passwordInputDOM.value;
   const role = roleInputDOM.value;
-  console.log({ username, password, role });
   try {
     await axios.post("/users", { username, password, role });
     showUsers();
@@ -73,7 +72,7 @@ formDOM.addEventListener("submit", async (e) => {
     passwordInputDOM.value = "";
     roleInputDOM.value = "user";
     formAlertDOM.style.display = "block";
-    formAlertDOM.textContent = `success, item added`;
+    formAlertDOM.textContent = `success, user added`;
     formAlertDOM.classList.add("text-success");
   } catch (error) {
     formAlertDOM.style.display = "block";
@@ -89,3 +88,14 @@ formDOM.addEventListener("submit", async (e) => {
 let date = new Date().getFullYear();
 let copy = document.getElementById("copy");
 copy.innerHTML = `&copy; ${date}`;
+
+function logOut() {
+  document.cookie =
+    "sessionId" + "=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+  window.location.reload();
+}
+
+window.addEventListener("beforeunload", function () {
+  document.cookie =
+    "sessionId" + "=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+});

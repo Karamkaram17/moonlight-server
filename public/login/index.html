@@ -8,29 +8,33 @@
   <title>Log IN</title>
   <link rel="stylesheet" href="style.css">
 </head>
-<form method="post" id="form">
-  <div id="container">
-    <p>log in</p>
-    <div class="input-div username-div">
-      <label for="username">Username</label>
-      <input type="text" name="username" id="username" placeholder="enter username" spellcheck="false"
-        autocomplete="off">
-    </div>
-    <div class="input-div">
-      <label for="password">Password</label>
-      <input type="password" name="password" id="password" placeholder="enter password" spellcheck="false"
-        autocomplete="off">
-    </div>
-    <button type="submit">log in</button>
-    <div id="alert"></div>
-  </div>
-</form>
 
 <body>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"
-    integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script src="index.js"></script>
-</body>
+  <div id="main-container">
+    <form method="post" id="form">
+      <div id="container">
+        <p>log in</p>
+        <div class="input-div username-div">
+          <label for="username">Username</label>
+          <input type="text" name="username" id="username" placeholder="enter username" spellcheck="false"
+            autocomplete="off">
+        </div>
+        <div class="input-div">
+          <label for="password">Password</label>
+          <input type="password" name="password" id="password" placeholder="enter password" spellcheck="false"
+            autocomplete="off">
+        </div>
+        <button type="submit">log in</button>
+        <div id="alert"></div>
+      </div>
+    </form>
+  </div>
+
+  <body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"
+      integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ=="
+      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="index.js"></script>
+  </body>
 
 </html>
